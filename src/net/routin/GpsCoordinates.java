@@ -35,7 +35,7 @@ public class GpsCoordinates {
     }
 
     /**
-     * Parse the JSON file and deserializes it into an object.
+     * Deserialize (or parse) the JSON file into an object.
      * @param place The name of the place to find
      * @return A list of coordinates object containing name, longitude and latitude
      * @throws Exception In case of error
