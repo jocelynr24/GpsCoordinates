@@ -7,6 +7,7 @@ import net.routin.Models.Coordinates;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,7 +22,7 @@ public class GpsCoordinates {
         BufferedReader reader = null;
         try {
             URL url = new URL(urlString);
-            reader = new BufferedReader(new InputStreamReader(url.openStream()));
+            reader = new BufferedReader(new InputStreamReader(url.openStream(), StandardCharsets.UTF_8));
             StringBuffer buffer = new StringBuffer();
             int read;
             char[] chars = new char[1024];
